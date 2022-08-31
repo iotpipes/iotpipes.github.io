@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="An IOT Platform">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<meta name=”robots” content=”noarchive”>
+<!-- Favicon -->
+<!-- <link rel="shortcut icon" href="/img/favicon/favicon.png"> -->
+<link rel="shortcut icon" type="image/x-icon" href="https://www.ipenghome-law.com/static/icon/pj_icon.png">
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Heebo|Open+Sans|Raleway" rel="stylesheet">
+<link rel="stylesheet" href="/css/custom.css">
+<link rel="stylesheet" href="/css/pe.css">
+<link rel="stylesheet" href="/css/footer.css">
+<link rel="stylesheet" href="/css/page-banner.css">
+<link rel="stylesheet" href="/css/nav.css">
+<link rel="stylesheet" href="/css/buttons.css">
+<link rel="stylesheet" href="/css/team.css">
+<link href="/css/responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<title>IOT Data Pipe</title>
+</head>
+<body>
+<header class="header-area clearfix">
+<div class="container-fluid h-100">
+<div class="row h-100">
+<div class="col-12 h-100">
+<div class="menu-area h-100">
+<nav class="navbar h-100 navbar-expand-lg align-items-center">
+<!-- <a class="navbar-brand" href="/">IOT Platform</a> -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sp-navbar"
+aria-controls="sp-navbar" aria-expanded="false" aria-label="Toggle navigation"><span
+class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse justify-content-end" id="sp-navbar">
+<ul class="navbar-nav animated" id="nav">
+<li class="nav-item "><a class="nav-link"
+href="/"></a></li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="page-banner-area">
+<div class="container h-100">
+<div class="row h-100 align-items-center">
+<div class="col-12">
+<div class="page-banner-content">
+<h2>IOT Data Pipe</h2>
+</div>
+<p class="aa">An IoT toolbox to enable non-technical users to connect, analyze and process IoT data streams.<br/> Based on Apache Pulsar and Apahce Streampipes.</p>
+</div>
+</div>
+</div>
+</div>
+<section class="elements-area section-padding-50">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one or more
+  ~ contributor license agreements.  See the NOTICE file distributed with
+  ~ this work for additional information regarding copyright ownership.
+  ~ The ASF licenses this file to You under the Apache License, Version 2.0
+  ~ (the "License"); you may not use this file except in compliance with
+  ~ the License.  You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+
+<h2>Measure Time Between Two Sensors</h2><p align="center"> 
+    <img src="/img/pipeline-elements/org.apache.streampipes.processors.transformation.jvm.booloperator.timekeeping/icon.png" width="150px;" class="pe-image-documentation"/>
+</p>
+
+<hr>
+<h2>Description</h2><p>This processor can be used to measure the time between two boolean sensors.
+For example on a conveyor, where one sensor is placed on the left and one senor placed on the right.
+Parts are transported on the conveyor and the sensors are boolean sensors detecting those parts. 
+The time is measured between the two sensors as well as the amount of complete transportation&#39;s is counted.<br>The measurement is initialized once the left sensor is true and stopped once the right sensor is true.
+There can also be multiple parts on the conveyor as long as the individual parts do not change.</p>
+<p align="center"> 
+    <img src="/img/pipeline-elements/org.apache.streampipes.processors.transformation.jvm.booloperator.timekeeping/time_measure_example.png" width="300px;" class="pe-image-documentation"/>
+</p>
+
+<hr>
+<h2>Required input</h2><p>Requires two boolean fields in the datastream.</p>
+<h3>Left Field</h3><p>The left field starts the timer when value is true.</p>
+<h3>Right Field</h3><p>The right field stops the timer and emits the event when its value is true.</p>
+<hr>
+<h2>Configuration</h2><p>No furhter configuration is required.</p>
+<h2>Output</h2><p>Appends two fields to the input event.</p>
+<h3>Timer Field</h3><p>The timer field is a numeric value representing the time between the two sensors. Runtime name: measured_time</p>
+<h3>Counter</h3><p>The counter indicated how many events where emitted by this component. Runtime name: counter</p>
+
+</div>
+</div>
+</div>
+</section>
+<footer class="footer-area clearfix">
+<div class="footer-section">
+<p class="footer-content-part">Copyright © 2019 - 2022 Armail
+</p>
+</div>
+</footer>
+<script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/scripts.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154181944-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-154181944-1');
+</script>
+</body>
+</html>

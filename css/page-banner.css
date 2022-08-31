@@ -1,0 +1,210 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+
+.page-banner-area {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-top: 0px;
+    background: linear-gradient(0deg,rgba(117, 223, 245, 0.8),rgba(34, 151, 201, 0.8)), url('/img/bg-img/bg-index.jpg');
+    background-size:cover;
+    color:white;
+}
+
+.page-banner-content h2 {
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size: 68px;
+}
+
+.pricing-table {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.5;
+    box-sizing: border-box;
+    outline: none !important;
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 15px;
+    width: 33.333%;
+}
+
+.pricing-table-inner {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none !important;
+    background: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px 0 0 0;
+}
+
+.price-h2 {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    box-sizing: border-box;
+    font-family: inherit;
+    outline: none !important;
+    font-weight: 100;
+    line-height: 4.063rem;
+    color: #1a8aa4;
+    letter-spacing: 0;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.price-h3 {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    box-sizing: border-box;
+    font-family: inherit;
+    outline: none !important;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 300;
+    color: #e3c502;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.lit {
+    font-size: 14px;
+}
+
+p {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    color: #3f3f3f;
+    box-sizing: border-box;
+    margin: 0 0 10px;
+    outline: none !important;
+    padding: 15px 30px 10px 30px;
+}
+
+.icon_check_alt2 {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+    list-style: outside none none;
+    text-align: left;
+    box-sizing: border-box;
+    outline: none !important;
+    font-family: 'ElegantIcons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    color: #ffe339;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+ul, li {
+    margin: 0px 0 0px 0px;
+}
+
+.price-li {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    box-sizing: border-box;
+    outline: none !important;
+    list-style: outside none none;
+    margin: 5px 40px 20px 50px;
+    text-align: center;
+}
+.price-li2 {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    box-sizing: border-box;
+    outline: none !important;
+    list-style: outside none none;
+    margin: 5px 0 20px 80px;
+    text-align: left;
+}
+.price-li3 {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    box-sizing: border-box;
+    outline: none !important;
+    list-style: outside none none;
+    margin: 5px 0 20px 80px;
+    text-align: left;
+}
+
+.aa {
+    font-size: 16px;
+    color: rgb(207, 245, 255);
+    font-weight: bold;
+}
+
+.price-contact {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    box-sizing: border-box;
+    font-family: inherit;
+    outline: none !important;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 300;
+    color: #e3c502;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin: 0;
+}
